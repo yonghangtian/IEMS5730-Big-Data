@@ -12,6 +12,11 @@ import java.io.IOException;
 import java.util.HashMap;
 
 
+/**
+ * @author tianyh
+ *
+ * This is an bad implementation of matrix multiplication. DO NOT USE IT AGAIN!!!
+ */
 public class MultiplyMatrix {
 
     public static class TokenizerMapper
@@ -113,10 +118,19 @@ public class MultiplyMatrix {
         }
         /* we need to find out i,j,k first.
            these conf is for small-dataset!!!!!
+                i = 16907; j = 610; k = 16907.
+
+           these conf is for median-dataset!!!!
+                i = 193609; j = 610; k = 193609
+
+           these conf is for large-dataset!!!!
+                i = 130642; j = 7120; k = 130642
+                
+
          */
-        conf.set("i", "16967");
+        conf.set("i", "193609");
         conf.set("j", "610");
-        conf.set("k", "16967");
+        conf.set("k", "193609");
         @SuppressWarnings("deprecation")
         Job job = new Job(conf, "matrix multiply");
 
