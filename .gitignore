@@ -17,6 +17,7 @@
 *.ipr
 *.class
 *.dat
+*.csv
 ### NetBeans ###
 /nbproject/private/
 /build/
